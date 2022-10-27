@@ -133,7 +133,7 @@ footer p{
   text-align: center;
   letter-spacing: 1.2px;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 300px) {
   .container {
     width: 85%;
     top: 50%;
@@ -142,13 +142,14 @@ footer p{
   }
   .search-container {
     gap: .8rem;
+    grid-template-columns: 1fr;
   }
   .search-container input{
     font-size: 10px;
   }
   .search-container button {
     font-size: 10px;
-    padding: 0rem 0.6rem;
+    padding: .8rem 0.6rem;
   }
   .details {
     padding: 0.4em 0;
@@ -196,6 +197,7 @@ footer p{
   }
   .search-container {
     gap: 1rem;
+    grid-template-columns: 1fr;
   }
   .search-container input{
     font-size: 12px;
