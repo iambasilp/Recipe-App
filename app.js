@@ -14,11 +14,6 @@ searchBtn.addEventListener("click", () => {
   .then((response) => response.json())
   .then((data) => {
     let myMeal = data.meals[0];
-    console.log(myMeal);
-    console.log(myMeal.strMealThumb);
-    console.log(myMeal.strMeal);
-    console.log(myMeal.strArea);
-    console.log(myMeal.strInstructions);
     let count = 1;
     let ingredients = [];
     for (let i in myMeal) {
@@ -28,11 +23,10 @@ searchBtn.addEventListener("click", () => {
         ingredient = myMeal[i];
         measure = myMeal["strMeasure" + count];
         count += 1;
-        console.log(ingredient, measure);
+  
         ingredients.push(`${measure} ${ingredient} `);
       }
     }
-    console.log(ingredients);
     result.innerHTML = `
     <img src=${myMeal.strMealThumb}>
     <div class="details">
