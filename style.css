@@ -134,6 +134,9 @@ footer p{
   letter-spacing: 1.2px;
 }
 @media screen and (max-width: 300px) {
+  footer p{
+    display: none;
+  }
   .container {
     width: 85%;
     top: 50%;
@@ -237,6 +240,9 @@ footer p{
     white-space: pre-wrap; /* i applied new things hahahahah....*/
     word-wrap: break-word;
     padding: 2.3em 1.3em 4em 1.3em;
+  }
+  footer p{
+    display: none;
   }
 }
 
