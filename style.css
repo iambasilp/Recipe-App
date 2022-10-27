@@ -59,6 +59,7 @@ img {
   text-align: center;
   padding: 0.6em 0;
   color: #fff;
+  border-radius: 4px;
 }
 .details h2 {
   font-size: 1.2em;

@@ -14,6 +14,7 @@ searchBtn.addEventListener("click", () => {
   .then((response) => response.json())
   .then((data) => {
     let myMeal = data.meals[0];
+    console.log(myMeal);
     let count = 1;
     let ingredients = [];
     for (let i in myMeal) {
