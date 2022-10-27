@@ -133,7 +133,61 @@ footer p{
   text-align: center;
   letter-spacing: 1.2px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 320px) {
+  .container {
+    width: 85%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.3s;
+  }
+  .search-container {
+    gap: .8rem;
+  }
+  .search-container input{
+    font-size: 10px;
+  }
+  .search-container button {
+    font-size: 10px;
+    padding: 0rem 0.6rem;
+  }
+  .details {
+    padding: 0.4em 0;
+  }
+  .details h2 {
+    font-size: .8em;
+  }
+  .details h4 {
+    font-size: 0.6em;
+  }
+  ul {
+    font-size: 10px;
+    gap: 0.6em 1em;
+    padding: 1em 0em 0em 1.2em;
+  }
+  #show-recipe {
+    left: 63%;
+    top: 2em;
+    font-size: 10px;
+    padding: 0.7em 0.5em;
+  }
+  #hide-recipe{
+    left: 85%;
+  }
+
+  .recipe pre {
+    border-top: 1px solid grey;
+    display: block;
+    margin-top: 2rem;
+    height: 420px;
+    overflow: hidden;
+    overflow-y: auto;
+    font-size: 0.8rem;
+    white-space: pre-wrap; /* i applied new things hahahahah....*/
+    word-wrap: break-word;
+    padding: 2.3em 1.3em 4em 1.3em;
+  }
+}
+@media screen and (min-width:301px) and (max-width: 500px) {
   .container {
     width: 85%;
     top: 50%;
@@ -183,3 +237,4 @@ footer p{
     padding: 2.3em 1.3em 4em 1.3em;
   }
 }
+
