@@ -32,7 +32,8 @@ body {
   border: none;
   outline: none;
   padding: 0.6em;
-  border-bottom: 1.3px solid #143559
+  border-bottom: 1.3px solid #143559;
+  text-transform: capitalize;
 }
 .search-container button {
   font-size: 14px;
@@ -41,6 +42,11 @@ body {
   border: none;
   font-weight: 600;
   border-radius: 4px;
+  transition:all ease 0.3s;
+  cursor: pointer;
+}
+.search-container button:hover{
+  background-color: #1c3d69;
 }
 h3 {
   text-align: center;
